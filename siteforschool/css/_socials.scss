@@ -1,0 +1,102 @@
+.socials {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+}
+
+.social {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid $main-color;
+    transition: all 0.5s ease;
+    -webkit-tap-highlight-color: transparent;
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        min-width: 100%;
+        min-height: 100%;
+
+        .fa {
+            color: $main-color;
+            transition: all 0.5s ease;
+        }
+    }
+
+    &:hover.facebook {
+        border: 5px solid #3b5998;
+        box-shadow: 0 0 15px #3b5998;
+        transition: all 0.5s ease;
+    }
+
+    &:hover .fa-facebook {
+        color: #3b5998;
+        text-shadow: 0 0 15px #3b5998;
+        transition: all 0.5s ease;
+    }
+
+    &:hover.envelope {
+        border: 5px solid #dd4b39;
+        box-shadow: 0 0 15px #dd4b39;
+        transition: all 0.5s ease;
+    }
+
+    &:hover .fa-envelope {
+        color: #dd4b39;
+        text-shadow: 0 0 15px #dd4b39;
+        transition: all 0.5s ease;
+    }
+
+    &:hover.skype {
+        border: 5px solid #00aced;
+        box-shadow: 0 0 15px #00aced;
+        transition: all 0.5s ease;
+    }
+
+    &:hover .fa-skype {
+        color: #00aced;
+        text-shadow: 0 0 15px #00aced;
+        transition: all 0.5s ease;
+    }
+
+    &:hover.github {
+        border: 5px solid #bc2a8d;
+        box-shadow: 0 0 15px #bc2a8d;
+        transition: all 0.5s ease;
+    }
+
+    &:hover .fa-github {
+        color: #bc2a8d;
+        text-shadow: 0 0 15px #bc2a8d;
+        transition: all 0.5s ease;
+    }
+
+    &:hover.phone {
+        border: 5px solid #4dc247;
+        box-shadow: 0 0 15px #4dc247;
+        transition: all 0.5s ease;
+    }
+
+    &:hover .fa-phone {
+        color: #4dc247;
+        text-shadow: 0 0 15px #4dc247;
+        transition: all 0.5s ease;
+    }
+
+}

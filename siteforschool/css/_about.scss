@@ -1,0 +1,25 @@
+.education {
+
+    &__time {
+        color: #00aced;
+    }
+
+    &__name {
+        display: inline-block;
+        min-width: 50%;
+        border-bottom: 2px solid $main-color;
+        margin-bottom: 20px;
+        padding: 10px 0;
+
+        span {
+            display: block;
+            width: 100%;
+            font-size: 2rem;
+            color: #3b5998;
+        }
+
+        &:last-child {
+            border: none;
+        }
+    }
+}
